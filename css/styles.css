@@ -24,6 +24,21 @@ html{
     max-width: 1140px;
     margin: 0 auto;
 }
+@media screen and (max-width: 1160px){
+    .container{
+        max-width: 760px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 780px){
+    .container{
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+}
+
+
 .flex{
     display: flex;
     /* outline: 1px solid red; */
@@ -69,7 +84,8 @@ html{
 .post__author img,
 .post__img img {
     position: absolute;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -120,6 +136,12 @@ html{
     color: #fff;
     max-width: 70%;
 }
+@media screen and (max-width: 780px){
+.post--lg .post__tittle {
+        max-width: none;
+    }
+
+}
 
 .post__time{
     font-size: 1.3rem;
@@ -134,4 +156,18 @@ html{
     margin-top: 15px;
     max-height: 12.5rem;
     overflow: hidden;
+}
+
+  .loader__text{
+      text-transform: uppercase;
+      color: #8996a3;
+      font-weight: 700;
+  }
+  .loader__text{
+      vertical-align: middle;
+  }
+  .loader{
+    text-align: center;
+    margin: 15px 0;
+    padding: 15px 0;    
 }
